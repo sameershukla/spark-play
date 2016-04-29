@@ -1,0 +1,27 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET   /health            demo.GitController.health
+
+# Count total push events
+GET   /push/count        demo.GitController.countTotalPushEvents
+
+# List total Push Event Details
+GET   /push/list         demo.GitController.printTotalPushEventDetails
+
+# List by username and counts
+GET   /push/actors       demo.GitController.fetchUserAndCount
+
+# Check whether given user has done any check in
+GET   /push/user/:name   demo.GitController.checkUserPushedCode(name: String)
+
+# Find users with maximum push events
+GET   /push/max          demo.GitController.userWithMaximumPush
+
+# Find users with minimum push events
+GET   /push/min          demo.GitController.userWithMinimumPush
+
+# Home page
+
+# Map static resources from the /public folder to the /assets URL path
