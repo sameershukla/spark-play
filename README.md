@@ -1,12 +1,21 @@
 Spark + Play activator template
 ===============================
 
-This is an [Typesafe Activator](http://typesafe.com/platform/getstarted) template to demonstrate [Apache Spark](http://spark.apache.org) and Play rest services.
+Simple Demo App for my learning of Spark, trying to develop API on top of Spark
 
-The motivation was [Go Reactive Activator Contest: Scala Days Edition](http://typesafe.com/blog/go-reactive-activator-contest-scala-days-edition)
+URL's
 
-# Run the activator project
+#Print Total Event Count
+http://localhost:9000/push/count
 
-Once you download the activator template, execute `./activator clean run`. and head for urls
- [http://localhost:9000/count](http://localhost:9000/count), [http://localhost:9000/list]
- (http://localhost:9000/list) or [http://localhost:9000/filter/Scala](http://localhost:9000/filter/Scala)
+#Print list of users 
+http://localhost:9000/push/list
+
+#Minimum Push done by User
+http://localhost:9000/push/min
+
+#Maximum Push done by users
+http://localhost:9000/push/max
+
+#List whether operation done by any given user
+http://localhost:9000/push/user/:name
